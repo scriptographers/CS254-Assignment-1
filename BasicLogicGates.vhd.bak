@@ -1,0 +1,13 @@
+entity BasicLogicGates is
+	port (X, Y: in bit; notX, XorY, XandY: out bit);
+end entity HalfAdder;
+
+architecture Struct of HalfAdder is
+begin
+	-- NOT.
+	notX <= (not X);
+	-- OR.
+	XorY <= (X or Y);
+	-- AND.
+	XandY <= (X and Y);
+end Struct;
