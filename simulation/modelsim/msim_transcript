@@ -1,3 +1,4 @@
+# Reading pref.tcl
 # do BasicLogicGate_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -6,32 +7,32 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying /home/devansh/Desktop/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying D:/Programs/QuartusLite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/devansh/PROJECTS/quartus/Assignment 1/BasicLogicGate.vhd}
+# vcom -93 -work work {D:/04-Semester/CS254/Assignments/A1/basiclogicgate.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:54:59 on Jan 24,2021
-# vcom -reportprogress 300 -93 -work work /home/devansh/PROJECTS/quartus/Assignment 1/BasicLogicGate.vhd 
+# Start time: 12:41:28 on Jan 25,2021
+# vcom -reportprogress 300 -93 -work work D:/04-Semester/CS254/Assignments/A1/basiclogicgate.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity BasicLogicGate
 # -- Compiling architecture Struct of BasicLogicGate
-# End time: 18:54:59 on Jan 24,2021, Elapsed time: 0:00:00
+# End time: 12:41:28 on Jan 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {/home/devansh/PROJECTS/quartus/Assignment 1/Testbench.vhd}
+# vcom -93 -work work {D:/04-Semester/CS254/Assignments/A1/Testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:54:59 on Jan 24,2021
-# vcom -reportprogress 300 -93 -work work /home/devansh/PROJECTS/quartus/Assignment 1/Testbench.vhd 
+# Start time: 12:41:28 on Jan 25,2021
+# vcom -reportprogress 300 -93 -work work D:/04-Semester/CS254/Assignments/A1/Testbench.vhd 
 # -- Loading package STANDARD
 # -- Compiling entity Testbench
 # -- Compiling architecture tb of Testbench
-# End time: 18:54:59 on Jan 24,2021, Elapsed time: 0:00:00
+# End time: 12:41:28 on Jan 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Testbench
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Testbench 
-# Start time: 18:54:59 on Jan 24,2021
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 12:41:28 on Jan 25,2021
 # Loading std.standard
 # Loading work.testbench(tb)
 # Loading work.basiclogicgate(struct)
@@ -42,7 +43,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break key hit
-# Simulation stop requested.
-# End time: 18:55:18 on Jan 24,2021, Elapsed time: 0:00:19
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 12:43:34 on Jan 25,2021, Elapsed time: 0:02:06
 # Errors: 0, Warnings: 0
