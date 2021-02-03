@@ -6,7 +6,7 @@ architecture tb of Testbench is
 	signal a, b : bit;  -- inputs 
 	signal negation, disjunction, conjunction : bit;  -- outputs
 	
-	component BasicLogicGate is
+	component BasicLogicGate is -- Different from an entity, an entity can have various architectures, while the compenent is a complete unit
 		port(
 			-- Inputs
 			X: in bit;
@@ -23,8 +23,8 @@ architecture tb of Testbench is
 begin
 
     -- Connecting test bench signals with BasicLogicGate.vhd
-	dut_instance: BasicLogicGate
-	port map(
+	dut_instance: BasicLogicGate -- dut stands for "Device Under Test"
+	port map( -- assigns actual signals to the component, i.e actual parameters to formal parameters
 		X => a, 
 		Y => b, 
 		
@@ -36,9 +36,9 @@ begin
 	-- Specify all possible inputs:
 	process
 	begin 
-		a <= '0';
+		a <= '0'; -- These happen simultanously 
 		b <= '0';
-		wait for 10000 ns;
+		wait for 10000 ns; -- wait as signal values are updated only when the process is paused
 
 		a <= '0';
 		b <= '1';
